@@ -1,0 +1,12 @@
+%echo Generating a basic OpenPGP key
+Key-Type: DSA
+Key-Length: 4096
+Subkey-Type: default
+Name-Real: Git Secret Test User
+Name-Comment: For testing git-secret
+Name-Email: gitsecret-test@foo.com
+Expire-Date: 0
+Passphrase: abc
+# Do a commit here, so that we can later print "done" :-)
+%commit
+%echo done
